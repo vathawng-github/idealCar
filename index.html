@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Finders Inc.</title>
+    <link rel = "stylesheet" href = "/carInc/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Ideal Car</h1>
+        <img src = "/carInc/carLogo.jpeg" />
+    </header>
+    <form id= "carForm" action="#" method="get">
+        <fieldset>
+            <legend>Select your Manufacturer</legend>
+            <label for = "manufacturer">Manufacturer:
+            <br><br>
+            <select id="manufacturer" name="manufacturer" size="5" style="width: 200px">
+            <optgroup>
+              <option value="ford">Ford</option>
+              <option value="toyota">Toyota</option>
+              <option value="honda">Honda</option>
+              <option value="chevy">Chevy</option>
+              <option value="tesla">Tesla</option>
+              <option value="kia">Kia</option>
+              <option value="kia">BMW</option>
+              <option value="kia">Buick</option>
+              <option value="kia">Mercedes-Benz</option>
+              <option value="kia">Hyundai</option>
+            </optgroup>
+            </select>
+            </label>
+        </fieldset>
+        <br><br>
+        <fieldset>
+          <legend>Color</legend>  
+          <label for="cardColour">Select Your Colour: 
+            <input type="color" 
+              id="carColour" 
+              name="carColour" />
+          </label>
+        </fieldset>  
+        <br><br>
+        <fieldset>
+            <legend>Doors</legend>
+            <label for="numDoors">Number of Doors:
+                <input
+                type="number"
+                id="numDoors"
+                name="numDoors"
+                placeholder="2"
+                size="5"
+                required
+                minlength="1"
+                maxlength="5"
+                min="0"
+                max="4"
+                step="1"
+                />
+            </label>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Drive Options</legend>
+            <input
+                type="checkbox"
+                id="fourWheel"
+                name="driveOptions"
+                value="fourWheel"
+                checked
+            />
+            <label for="parmesan">4 Wheel Drive</label>
+            <br />
+            <input
+                type="checkbox"
+                id="allWheel"
+                name="driveOptions"
+                value="allWheel"
+            />
+            <label for="allWheel">All Wheel Drive</label>
+            <br />
+            <input
+                type="checkbox"
+                id="frontWheel"
+                name="driveOptions"
+                value="frontWheel"
+            />
+            <label for="frontWheel">Front Wheel Drive</label>
+            <br>
+            <input
+                type="checkbox"
+                id="rearWheel"
+                name="driveOptions"
+                value="rearWheel"
+            />
+            <label for="rearWheel">Rear Wheel Drive</label>
+        </fieldset>
+            <br><br>
+        <fieldset>
+            <legend>Your License</legend>
+            <label for ='license'>License:
+                <input
+                type="text"
+                id="license"
+                name="license"
+                placeholder="xxxxxx"
+                size="25"
+                required
+                minlength="1"
+                maxlength="7"
+                pattern="^[A-Za-z]$"
+                />
+            </label>
+        </fieldset>
+        <br><br>
+            <fieldset>
+                <legend>Car Play</legend>
+                <label for = "carPlay"><strong>Choose Car Audio Software:</strong></label>
+                <br>
+                <input
+                    type="radio"
+                    id="apple"
+                    name="carPlay"
+                    value="apple"
+                />
+                <label for="apple">Apple Car Play</label>
+                <br />
+                    <input
+                        type="radio"
+                        id="android"
+                        name="carPlay"
+                        value="android"
+                        checked
+                    />
+                <label for="mediumOrder">Android Auto</label>
+            <br><br>
+            </fieldset>
+            <br><br>
+            <fieldset>
+            <legend>Comments</legend>
+            <label for="customerComments">Your comments and notes for delivery:
+                <br><br>
+                <textarea
+                    id="customerComments"
+                    name="customerComments"
+                    placeholder="comments"
+                    >
+                </textarea>
+            </label>
+            <br><br>
+        </fieldset>
+        <br><br>
+        <input type = "submit" id = "postResults">  
+    </form>
+</body>
+</html>
